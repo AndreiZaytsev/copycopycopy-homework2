@@ -16,6 +16,7 @@ public class workField {
 
         leader.introduceYourself();
         leader.howAreYou();
+        leader.solarCharge();
 
     }
 }

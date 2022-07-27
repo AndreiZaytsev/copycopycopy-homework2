@@ -28,6 +28,11 @@ public class Robots {
         }
     }
 
+                void solarCharge() {
+                    robotPower = 100;
+                    System.out.println("Я полностью зарядился!");
+                    System.out.println("Урвоень заряда: " + robotPower);
+                }
 }
 
 
