@@ -10,6 +10,7 @@ public class workField {
 
         worker.introduceYourself();
         worker.howAreYou();
+        worker.robotCleans();
 
         warrior.introduceYourself();
         warrior.howAreYou();
