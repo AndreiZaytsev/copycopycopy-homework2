@@ -2,16 +2,35 @@ package orge.example;
 
 public class Robots {
 
-    int robotNumber;
-    int robotPower;
-    String robotType;
-    double robotSalary;
+    private int robotNumber;
+    private int robotPower;
+    private String robotType;
+    private double robotSalary;
 
     public Robots(int robotNumber, int robotPower, String robotType, double robotSalary) {
-        this.robotNumber = robotNumber;
-        this.robotPower = robotPower;
-        this.robotType = robotType;
-        this.robotSalary = robotSalary;
+        if (robotNumber > 0) {
+            this.robotNumber = robotNumber;
+        } else {
+            System.out.println("Номер робота не может быть отрицательным");
+        }
+
+        if (robotPower > 0) {
+            this.robotPower = robotPower;
+        } else {
+            System.out.println("Заряд энергии робота не может быть отрицательным");
+        }
+
+        if (robotType.equals("") || robotType.equals(" ")) {
+            System.out.println("Название робота не может быть пустым");
+        } else {
+            this.robotType = robotType;
+        }
+
+        if (robotSalary > 0) {
+            this.robotSalary = robotSalary;
+        } else {
+            System.out.println("Робот не может работать бесплатно");
+        }
     }
 
     void introduceYourself() {
