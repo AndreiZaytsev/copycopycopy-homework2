@@ -57,7 +57,6 @@ public class Robots {
         System.out.println("Хотите, чтобы я тут прибрался? Убираюсь!");
         robotPower = robotPower - 10;
     }
-
 }
 
 
